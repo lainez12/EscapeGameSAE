@@ -11,10 +11,10 @@ html {
 :root {
     /* Couleurs*/
     --blanche : white;
-    --noir : rgb(20, 0, 0);
+    --noir : rgb(0, 0, 0);
     --bleu : rgb(0, 0, 100);
     --rougeTexte : rgb(200, 20, 20);
-    --rougebg : rgb(60, 0, 0);
+    --rougebg : rgb(45, 1, 1);
 
     /* taille de police */
     --titre : 7.0rem;
@@ -50,7 +50,7 @@ a {
 /* Styles general*/
 
 body {
-    background: var(--noir);
+    background-image: linear-gradient(var(--rougebg), var(--noir))
 }
 
 h2 {
@@ -234,6 +234,12 @@ figure.cadenaAtras {
     justify-content: center;
 }
 
+#BoiteSimple div.titre-subtitle-p-b {
+    display: flex; flex-direction: column; 
+    align-items: flex-end; 
+    width: 50%;
+}
+
 #BoiteSimple .titre-subtitle-p-b {
     width: 50%;
 }
@@ -361,7 +367,7 @@ footer {
     justify-content: space-between;
 }
 
-#icons-footer img {
+#icons-footer a img {
     height: 30px;
 }
 
