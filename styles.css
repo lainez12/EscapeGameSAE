@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Couleurs*/
+    --blanche : white;
+    --noir : rgb(20, 0, 0);
+    --bleu : rgb(0, 0, 100);
+    --rougeTexte : rgb(200, 20, 20);
+    --rougebg : rgb(60, 0, 0);
+
+    /* taille de police */
+    --titre : 7.0rem;
+    --subTitre: 5.0rem;
+    --grandTexte: 3.8rem;
+    --paragraphes : 2.0rem;
+    --petitTexte : 1.5rem;
+
+    /* polices */
+    --policePeur :
+    'The Girl Next Door';
+    --policeSimple :
+    'Telex';
+
+    /* Espaces */
+    --largeurmax: 900px;
+    --largeurmin: 600px;
+
+    /* Feutures */
+    --borderadius : 50px;
+}
+
+/* Nettoyage des styles fixés par le navigateur */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Styles general*/
+
+body {
+    background: var(--noir);
+}
+
+h2 {
+    font-family: 'The Girl Next Door', 'cursive';
+    font-size: var(--titre);
+}
+
+h2.droite {
+    text-align: right;
+}
+
+h2.gauche {
+    text-align: left;
+}
+
+h2.centre {
+    text-align: center;
+}
+
+h2.rouge {
+    color: var(--rougeTexte);
+}
+
+h2.blanc {
+    color: var(--blanche);
+}
+
+h4 {
+    color: white; 
+    font-size: var(--subTitre); 
+}
+
+h4.texteGrande{
+    font-size: var(--grandTexte);
+}
+
+h4.droite {
+    text-align: right;
+}
+
+h4.gauche {
+    text-align: left;
+}
+
+h4.policePeur {
+    font-family: var(--policePeur), ' cursive';
+}
+
+h4.policeSimple {
+    font-family: var(--policeSimple), 'cursive';
+}
+
+p {
+    color: white; 
+    font-size: var(--paragraphes);
+}
+
+p.droite {
+    text-align: right;
+}
+
+p.gauche {
+    text-align: left;
+}
+
+p.justify {
+    text-align: justify;
+}
+
+button {
+    width: 60px;
+    height: 35px;
+    border-radius: 30px;
+    color: white;
+}
+
+button.rouge {
+    background-color: var(--rougebg);
+}
+
+button.bleu {
+    background-color: var(--bleu);
+}
+
+main section,
+main article {
+    margin-bottom: 150px;
+}
+
+
+/* Header estiles */
+
+header {
+    min-width: var(--largeurmin);
+    display: flex;
+    justify-content: center;
+}
+
+#Boitier-nav {
+    position: fixed;
+    width: 600px;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 0 0 40px;
+    background: white;
+    border-radius: var(--borderadius);
+    border: 1px black solid;
+    animation: 1s 0.3 ease;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+}
+
+#Boitier-nav nav ul li:nth-child(2),
+#Boitier-nav nav ul li:nth-child(3),
+#Boitier-nav nav ul li:nth-child(4) {
+    display: none; 
+}
+
+nav ul li a {
+    font-size: var(--grandTexte);
+    font-family: var(--policeSimple);
+    color: var(--noir);
+}
+
+/* Styles pour la video */
+
+#video-container {
+    border-radius: 30px;
+    max-width: 800px;
+    min-width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: 100px auto 0;
+    
+}
+
+#video-container video{
+    width: 100%;
+}
+
+
+
+figure.chaineA {
+    position: relative;
+    width: 100%;
+    bottom: 490px;
+    transition: opacity 2s;
+}
+
+figure.chaineA img{
+    width: 100%; 
+    position: absolute; 
+    left: 0px; z-index: 1; 
+    pointer-events: none;
+}
+
+figure.chaineA img:nth-child(2) {
+    transform: scaleX(-1);
+}
+
+figure.cadenaAtras {
+    position: relative;
+    z-index: -1;
+    bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Styles BoiteSimple*/
+
+#BoiteSimple {
+    display: flex; 
+    flex-direction: row-reverse; 
+    width: var(--largeurmax);
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#BoiteSimple .titre-subtitle-p-b {
+    width: 50%;
+}
+
+#BoiteSimple .container-img {
+    width: 45%;
+    height: 300px;
+}
+
+#BoiteSimple .container-img img {
+    height: 100%;
+}
+
+
+/* Regles */
+#Regles {
+    width: var(--largeurmax);
+    margin: 0 auto;
+}
+
+#regles-container-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#regles-container {
+    width: 45%;
+}
+
+#regles-container div.regles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+div.container-icons {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--rougebg);
+}
+
+div.container-icons img {
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.texteRegles {
+    width: 60%;
+}
+
+figure.img-regles {
+    width: 40%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+figure.img-regles img {
+    height: 100%;
+}
+
+
+
+/* Styles pour les salles */
+
+#lesalles {
+    margin: 0 auto;
+    width: 900px;
+}
+
+
+#lesalles h2 {
+    text-align: center;
+    color: red;
+}
+
+
+#lesalles div#derroulant {
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+div#derroulant div.salles{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    animation: derroulante 1s ease-in 0.2s;
+}
+
+
+div#derroulant div.salles figure.container-img-salle {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+
+figure.container-img-salle img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    filter: hue-rotate(90deg) blur(0.1pc);
+}
+
+/* Styles footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin: 35px auto 10px;
+    padding: 0 100px 0;
+}
+
+#icons-footer {
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+}
+
+#icons-footer img {
+    height: 30px;
+}
+
+footer span {
+    font-size: var(--petitTexte);
+    color: var(--blanche);
+}
+
+footer a {
+    font-size: var(--petitTexte);
+    color: var(--blanche);
+}
+
+/*Animaciones */
+
+#Boitier-nav:hover {
+    height: auto; /*Il fait grandir le nav*/
+    border-radius: 25px;
+    z-index: 3;
+}
+
+#Boitier-nav:hover nav ul li:nth-child(2),
+#Boitier-nav:hover nav ul li:nth-child(3),
+#Boitier-nav:hover nav ul li:nth-child(4) {
+    display: block; /*Il fait grandir apparaitre la liste de nav*/
+}
+
+nav ul li a:hover {
+    color: var(--rougeTexte);
+    font-weight: bold;
+}
+
+#video-container:focus-within + figure.chaineA {
+    opacity: .0;
+}
+
+div#derroulant div.salles:hover{
+    width: 450px;
+    cursor: help;
+}
+
+figure.container-img-salle img:hover {
+    filter: none;
+}
