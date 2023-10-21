@@ -115,7 +115,7 @@ p.gauche {
 }
 
 p.justify {
-    text-align: justify;
+    text-align: center;
 }
 
 button {
@@ -237,7 +237,7 @@ figure.cadenaAtras {
 
 #BoiteSimple {
     display: flex; 
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     width: var(--largeurmax);
     margin: 0 auto;
     justify-content: space-between;
