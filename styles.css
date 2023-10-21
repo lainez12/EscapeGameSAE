@@ -115,7 +115,7 @@ p.gauche {
 }
 
 p.justify {
-    text-align: justify;
+    text-align: center;
 }
 
 button {
@@ -237,7 +237,7 @@ figure.cadenaAtras {
 
 #BoiteSimple {
     display: flex; 
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     width: var(--largeurmax);
     margin: 0 auto;
     justify-content: space-between;
@@ -426,6 +426,9 @@ figure.img-regles img {
     color: red;
 }
 
+#lesalles > p {
+    text-align: center;
+}
 
 #lesalles div#derroulant {
     width: 100%;
@@ -442,7 +445,7 @@ div#derroulant div.salles{
 div#derroulant div.salles p {
     display: none;
     position: relative;
-    bottom: 180px;
+    bottom: 250px;
     font-size: var(--paragraphes);
     font-family: var(--policePeur);
     padding: 10px;
