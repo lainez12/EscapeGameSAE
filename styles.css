@@ -151,14 +151,22 @@ header {
 
 #Boitier-nav {
     position: fixed;
+    top: 1px;
     width: 600px;
     height: 40px;
     margin-top: 16px;
-    padding: 0 0 0 40px;
+    /* padding: 0 0 0 40px; */
     background: white;
     border-radius: var(--borderadius);
     border: 1px black solid;
     animation: 1s 0.3 ease;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+#Boitier-nav nav {
+    text-align: center;
 }
 
 nav ul li {
@@ -175,6 +183,7 @@ nav ul li a {
     font-size: var(--grandTexte);
     font-family: var(--policeSimple);
     color: var(--noir);
+    /* text-align: center; */
 }
 
 /* Styles pour la video */
@@ -297,12 +306,12 @@ div.container-com figure{
     margin: 0 auto;
     background-color: var(--bleu);
     border-radius: 50px;
-    padding: 20px;
+    padding: 10px 40px 60px 40px;
 }
 
 div#info-container {
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 
 div#info-container div.info {
@@ -492,7 +501,6 @@ footer a {
 #Boitier-nav:hover {
     height: auto; /*Il fait grandir le nav*/
     border-radius: 25px;
-    z-index: 3;
 }
 
 #Boitier-nav:hover nav ul li:nth-child(2),
@@ -515,7 +523,7 @@ div#derroulant div.salles:hover{
 }
 
 div#derroulant div.salles:active {
-    width: 300px;
+    width: 450px;
 }
 
 div#derroulant div.salles:active p{
