@@ -430,6 +430,16 @@ div#derroulant div.salles{
     animation: derroulante 1s ease-in 0.2s;
 }
 
+div#derroulant div.salles p {
+    display: none;
+    position: relative;
+    bottom: 180px;
+    font-size: var(--paragraphes);
+    font-family: var(--policePeur);
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.649);
+}
 
 div#derroulant div.salles figure.container-img-salle {
     width: 100%;
@@ -501,8 +511,15 @@ nav ul li a:hover {
 }
 
 div#derroulant div.salles:hover{
-    width: 450px;
     cursor: help;
+}
+
+div#derroulant div.salles:active {
+    width: 300px;
+}
+
+div#derroulant div.salles:active p{
+    display: block;
 }
 
 figure.container-img-salle img:hover {
