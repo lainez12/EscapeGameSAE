@@ -12,7 +12,7 @@ html {
     /* Couleurs*/
     --blanche : white;
     --noir : rgb(0, 0, 0);
-    --bleu : #25799c;
+    --bleu : #0100378e;
     --rougeTexte : rgb(200, 20, 20);
     --rougebg : rgb(45, 1, 1);
 
@@ -58,7 +58,8 @@ h2 {
     font-size: var(--titre);
 }
 
-h2.droite {
+h2.droite,
+h4.droite {
     text-align: right;
 }
 
@@ -70,25 +71,22 @@ h2.centre {
     text-align: center;
 }
 
-h2.rouge {
+h2.rouge,
+h4.rouge {
     color: var(--rougeTexte);
 }
 
-h2.blanc {
+h2.blanc,
+h4.blanc {
     color: var(--blanche);
 }
 
-h4 {
-    color: white; 
+h4 { 
     font-size: var(--subTitre); 
 }
 
 h4.texteGrande{
     font-size: var(--grandTexte);
-}
-
-h4.droite {
-    text-align: right;
 }
 
 h4.gauche {
@@ -128,14 +126,6 @@ button {
     font-size: var(--paragraphes);
 }
 
-button.bleu:hover {
-    cursor: pointer;
-    background-color: var(--noir);
-    color: var(--rougeTexte);
-    font-weight: bold;
-    box-shadow: 0px 1px 10px 3px #ffffff8f;
-}
-
 button.rouge {
     background-color: var(--rougebg);
 }
@@ -144,9 +134,10 @@ button.bleu {
     background-color: var(--bleu);
 }
 
-main section,
-main article {
-    margin-bottom: 150px;
+main#contenu-principal section,
+main#contenu-principal article,
+main#contenu-principal > div {
+    margin-bottom: 90px;
 }
 
 
@@ -261,6 +252,77 @@ figure.cadenaAtras {
     height: 100%;
 }
 
+/*Styles pour commentaires*/
+
+#commentaires {
+    width: var(--largeurmax);
+    display: flex;
+    margin: 0 auto;
+}
+
+#commentaires .container-com {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+#commentaires .droite {
+    align-items: flex-end;
+}
+
+#commentaires .gauche {
+    align-items: flex-start;
+}
+
+
+div.container-com figure{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.container-com figure img{
+    height: 100%;
+}
+
+
+/* Styles pour plusinfo */
+
+#plusInfo {
+    width: var(--largeurmax);
+    margin: 0 auto;
+    background-color: var(--bleu);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+div#info-container {
+    display: flex;
+    gap: 30px;
+}
+
+div#info-container div.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.info h5 {
+    font-size: var(--grandTexte);
+    font-family: var(--policeSimple);
+    color: var(--blanche);
+}
+
+
+
+div.info p {
+    text-align: justify;
+}
+
 
 /* Regles */
 #Regles {
@@ -314,7 +376,33 @@ figure.img-regles img {
     height: 100%;
 }
 
+/* Styles pour Call To Action */
 
+#callToAction {
+    display: flex;
+    flex-direction: row;
+    width: var(--largeurmax);
+    margin: 0 auto;
+}
+
+#callToAction figure {
+    width: 40%;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#callToAction figure img {
+    width: 100%;
+}
+
+#callToAction div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 /* Styles pour les salles */
 
@@ -419,4 +507,12 @@ div#derroulant div.salles:hover{
 
 figure.container-img-salle img:hover {
     filter: none;
+}
+
+button.bleu:hover {
+    cursor: pointer;
+    background-color: var(--noir);
+    color: var(--rougeTexte);
+    font-weight: bold;
+    box-shadow: 0px 1px 10px 3px #ffffff8f;
 }
