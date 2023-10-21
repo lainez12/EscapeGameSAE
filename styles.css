@@ -26,8 +26,7 @@ html {
     /* polices */
     --policePeur :
     'The Girl Next Door';
-    --policeSimple :
-    'Telex';
+    --policeSimple : 'Telex';
 
     /* Espaces */
     --largeurmax: 900px;
@@ -104,6 +103,7 @@ h4.policeSimple {
 p {
     color: white; 
     font-size: var(--paragraphes);
+    font-family: var(--policeSimple);
 }
 
 p.droite {
