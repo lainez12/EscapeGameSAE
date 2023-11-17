@@ -1,0 +1,56 @@
+body {
+    background-image: url(../src/HomeBack.png);
+    background-size: cover; /* pour ajuster la taille de l'image à la fenêtre */
+    background-position: center; /* pour centrer l'image */
+    background-repeat: no-repeat; /* pour éviter la répétition de l'image */
+}
+
+section{
+    margin-left: 20px;
+}
+
+.Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.Row div{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.Divider{
+    width: 3px;
+    height: 185px;
+    background-color: var(--shark-700);
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.Column{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-HyperBold);
+    color: var(--aqua-green-400);
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+p{
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-Bold);
+    color: var(--shark-700);
+    font-size: 17px;
+    margin-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#indent{
+    tab-size: 10px;
+}

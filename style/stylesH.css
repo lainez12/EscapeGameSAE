@@ -1,0 +1,111 @@
+header {
+    margin-top: 35px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+    align-items: center;
+}
+
+header figure.logoContainer {
+    width: 350px;
+}
+
+figure.logoContainer img {
+    width: 100%;
+}
+
+
+header div.iconsContainer-Header img {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+
+div.iconsContainer-Header img:nth-child(1){
+    left: 0px;
+    top: 0px;
+    width: 220px;
+}
+
+div.iconsContainer-Header img:nth-child(2) {
+    top: 0px;
+    left: 450px;
+    height: 160px;
+}
+
+div.iconsContainer-Header img:nth-child(3){
+    left: 350px;
+    top: 160px;
+    width: 60px;
+}
+
+#menuDerroulant {
+    border: 2px var(--shark-700) solid;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+nav#container-menuDerroulant {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#container-menuDerroulant ul {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-SemiBold);
+    font-size: var(--Police-Taille-Regular);
+    gap: 30px;
+}
+
+#container-menuDerroulant ul li:nth-child(1){
+    border-bottom: 2px var(--aqua-green-700) solid;
+    padding-bottom: 2px;
+}
+
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5) {
+    display: none;
+}
+
+div#menuDerroulant:hover nav ul li:hover {
+    border-bottom: 2px var(--fire-bush-700) solid;
+}
+
+div#menuDerroulant:hover nav ul li:hover a {
+    color: var(--fire-bush-700);
+}
+
+
+#menuDerroulant:hover nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: var(--shark-700);
+}
+
+#menuDerroulant:hover nav ul li:nth-child(1){
+    border: none;
+}
+
+#menuDerroulant:hover nav {
+    margin-right: 27px;
+}
+
+#menuDerroulant:hover {
+    width: auto;
+    padding-left: 20px;
+}

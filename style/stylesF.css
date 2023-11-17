@@ -1,0 +1,116 @@
+footer {
+    width: 100%;
+    z-index: 1;
+    background: var(--aqua-green-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section {
+    z-index: 2;
+}
+
+footer #sociaux {
+    border-top: 2px var(--shark-700) solid;
+    width: 95%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer #sociaux h5 {
+    margin-top: 10px;
+    font-family: var(--PoliceG);
+    font-weight: var(--Police-weight-Bold);
+    font-size: var(--Police-Taille-Regular);
+    color: var(--aqua-green-800);
+}
+
+footer #sociaux div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+footer #sociaux div img {
+    width: 40px;
+    height: 40px;
+}
+
+footer section#Links {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 30%;
+    border-top: 2px var(--shark-700) solid;
+    margin-top: 25px;
+}
+
+section#Links div.links-footer p a{
+    text-align: center;
+}
+
+section#Links div.links-footer p{
+    text-align: center;
+}
+
+section#Links div.links-footer p a{
+    font-size: var(--Police-Taille-Texte);
+    font-weight: var(--Police-weight-SemiBold);
+    font-family: var(--PoliceG);
+    color: var(--shark-700);
+}
+
+footer section#text-footer {
+    width: 80%;
+    margin-top: 20px;
+}
+
+#text-footer p {
+    font-size: var(--Police-Taille-Texte);
+    font-weight: var(--Police-weight-Bold);
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+footer #images-footer img{
+    position: absolute;
+}
+
+footer #images-footer img:nth-child(1) {
+    left: 15%;
+    height: 90px;
+    margin-top: 90px;
+}
+
+footer #images-footer img:nth-child(2) {
+    left: 65%;
+    height: 180px;
+}
+
+footer #images-footer img:nth-child(3) {
+    left: 25%;
+}
+
+footer #images-footer img:nth-child(4) {
+    left: 1%;
+    width: 200px;
+    margin-top: 110px;
+}
+
+footer #images-footer img:nth-child(5) {
+    height: 180px;
+    left: 2%;
+}
+
+footer #images-footer img:nth-child(6) {
+    height: 180px;
+    right: 0;
+}
+
+.logo-gris {
+    width: 230px;
+    margin-top: 25px;
+}

@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--Bg-Web);
+}
+
+:root {
+    /*Web Colors*/
+    /*Aqua Green*/
+    --Bg-Web: #d1e2d0; /*Background General*/
+    --aqua-green-300: #abcaab;
+    --aqua-green-400: #70a070;
+    --aqua-green-500: #5c8b5c; /*to background solid, example buttons or input*/
+    --aqua-green-600: #487148; /*to Bg hover*/
+    --aqua-green-700: #3b5a3c; /*to Bg active, text, or border*/
+    --aqua-green-800: #324933; /*to Text, or gradient*/
+    --gradient-green1: linear-gradient(155deg, rgba(50,73,51,1) 25%, rgba(72,113,72,1) 100%);
+    --gradient-green2: linear-gradient(155deg, rgba(72,113,72,1) 34%, rgba(92,139,92,1) 100%);
+    --aqua-green-200: #d1e2d0; /*To text or things disable*/
+    /* More information about how to use here -> uicolors.app/shared/a067a630-3121-4e5d-9fd5-5234ce03e105*/
+
+    /*Black*/
+    --shark-700: #4e504f; /*To text, bg, border*/
+    --shark-50: #f5f6f6; /*So close to white*/
+
+    /*Yellow*/
+    --fire-bush-100: #fbf0ca;
+    --fire-bush-200: #f6e091;
+    --fire-bush-300: #f2ca57;
+    --fire-bush-400: #efb430;
+    --fire-bush-500: #e8981e;
+    --fire-bush-600: #cd7112;
+    --fire-bush-700: #aa5013;
+    /* More information about how to use here -> uicolors.app/shared/3aaca56b-e91a-436f-924b-5f7813adae9d*/
+
+    /*Web Fonts (Police)*/
+    --pocileG: 'Libre Franklin', sans-serif;
+    --Police-weight-thin: 100;
+    --Police-weight-Regular: 400;
+    --Police-weight-SemiBold: 600;
+    --Police-weight-Bold: 700;
+    --Police-weight-HyperBold: 900;
+
+    --Police-Taille-SmallTexte: 1.2rem;
+    --Police-Taille-Texte: 1.6rem;/*P*/
+    --Police-Taille-Regular: 2.3rem; /*Mini Titre*/
+    --Police-Taille-SubTitle: 3.5rem;/*h3 or h4*/
+    --Police-Taille-TitlePage: 6.0rem; /*h1 or h2*/
+
+    
+    /*Screen size*/
+    --Ordi: 1200px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

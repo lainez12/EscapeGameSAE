@@ -1,0 +1,92 @@
+
+h1 {
+    font-size: var(--Police-Taille-TitlePage);
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-HyperBold);
+    color: var(--aqua-green-800);
+    text-align: center;
+}
+
+main {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main>p {
+    color: var(--aqua-green-700);
+    font-size: var(--Police-Taille-Texte);
+    font-family: var(--pocileG);
+    font-weight: var( --Police-weight-Regular);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0px 50px 20px;
+}
+
+#left-content {
+    width : 75%;
+
+}
+
+#right-content {
+    width: 23%;
+}
+
+main div#left-content > section {
+    margin: 10px 0px;
+}
+
+main h2 {
+    font-size: var(--Police-Taille-SubTitle);
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-Bold);
+    color: var(--aqua-green-800);
+    margin: 0px 0px
+
+}
+
+main h3 {
+    font-size: var(--Police-Taille-Regular);
+    font-family: var(--pocileG);
+    font-weight: var(--Police-weight-Bold);
+    color: var(--aqua-green-800);
+}
+
+main div#left-content h3 {
+    margin: 25px 0px 10px 0px;
+}
+
+main div#right-content h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+section p {
+    font-size: var(--Police-Taille-Regular);
+    line-height: 120%;
+    text-align: justify;
+    text-indent: 12px;
+}
+
+article p {
+    font-size: var(--Police-Taille-Texte);
+    text-align: justify;
+}
+
+.little-info {
+    background-color: grey;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
