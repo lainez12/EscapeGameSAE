@@ -109,3 +109,119 @@ nav ul li a {
     width: auto;
     padding-left: 20px;
 }
+
+
+@media screen and (max-width: 700px) {
+    header {
+        margin: 95px 0px 65px 0px;
+        width: 100vw;
+        height: 110px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        align-items: center;
+    }
+    
+    div.iconsContainer-Header img:nth-child(2) {
+        top: 0px;
+        left: 50%;
+        height: 90px;
+    }
+     
+    figure.logoContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header figure.logoContainer img:nth-child(1) {
+        display: block;
+        width: 200%;
+    }
+
+    header figure.logoContainer {
+        width: 100px;
+        height: 100px;
+    }
+    
+    header figure.logoContainer img:nth-child(2) {
+        display: none;
+        width: 100%;
+    }
+
+    #menuDerroulant {
+        border: 2px var(--shark-700) solid;
+        border-radius: 50px;
+        margin-left: 0px;
+        width: 100px;
+        height: 50px;
+        background: var(--aqua-green-300);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        margin-right: 20px;
+    }
+
+    #menuDerroulant:hover {
+        width: auto;
+        padding-left: 0px;
+        align-items: flex-start;
+        padding-top: 2%;
+    }
+
+    #container-menuDerroulant ul {
+        display: flex;
+        flex-direction: column;
+        font-family: var(--pocileG);
+        font-weight: var(--Police-weight-SemiBold);
+        font-size: var(--Police-Taille-Regular);
+        gap: 30px;
+    }
+
+    #menuDerroulant:hover nav {
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #menuDerroulant {
+        background: var(--aqua-green-300);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    figure.logoContainer img:nth-child(1) {
+        display: none;
+    }
+
+    header figure.logoContainer {
+        width: 110px;
+        height: 110px;
+    }
+    
+    figure.logoContainer img:nth-child(2) {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body header figure.logoContainer img:nth-child(1) {
+        display: none;
+    }
+
+    body header figure.logoContainer {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0% 70% 0% 0%;
+    }
+    
+    body header figure.logoContainer img:nth-child(2) {
+        display: block;
+        width: 100%;
+    }
+}
