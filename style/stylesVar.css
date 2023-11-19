@@ -12,6 +12,12 @@ body {
     background-color: var(--Bg-Web);
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--Bg-Web);
+    }
+}
+
 :root {
     /*Web Colors*/
     /*Aqua Green*/
@@ -39,6 +45,10 @@ body {
     --fire-bush-500: #e8981e;
     --fire-bush-600: #cd7112;
     --fire-bush-700: #aa5013;
+
+    /*Blue*/
+    --sky-blue: rgb(26, 149, 224);
+    --navy-blue: rgb(0, 0, 128);
     /* More information about how to use here -> uicolors.app/shared/3aaca56b-e91a-436f-924b-5f7813adae9d*/
 
     /*Web Fonts (Police)*/
@@ -49,7 +59,7 @@ body {
     --Police-weight-Bold: 700;
     --Police-weight-HyperBold: 900;
 
-    --Police-Taille-SmallTexte: 1.2rem;
+    --Police-Taille-SmallTexte: 1.3rem;
     --Police-Taille-Texte: 1.6rem;/*P*/
     --Police-Taille-Regular: 2.3rem; /*Mini Titre*/
     --Police-Taille-SubTitle: 3.5rem;/*h3 or h4*/
@@ -57,7 +67,8 @@ body {
 
     
     /*Screen size*/
-    --Ordi: 1200px;
+    --Ordi: 1300px;
+    --Portable: 600px;
 }
 
 
