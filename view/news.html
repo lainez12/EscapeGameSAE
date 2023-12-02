@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoEco</title>
-    <link rel="stylesheet" href="./style/stylesH.css"> <!-- Header's Styles -->
-    <link rel="stylesheet" href="./style/stylesF.css"> <!-- Footer's Styles -->
-    <link rel="stylesheet" href="./style/stylesVar.css"> <!-- Variables's Styles -->
-    <link rel="stylesheet" href="./style/stylesNews.css"> <!-- Page's Styles-->
-    <link rel="stylesheet" href="./mobile/stylesNews.css" media="screen and (max-width: 1300px)">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/wrXgPUG.png">
+    <link rel="stylesheet" href="../stylee/stylesH.css"> <!-- Header's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesF.css"> <!-- Footer's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesVar.css"> <!-- Variables's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesNews.css"> <!-- Page's Styles-->
+    <link rel="stylesheet" href="../stylee/mobile/stylesNews.css" media="screen and (max-width: 1300px)">
     <!--Links to have Libre Franklin's Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +22,17 @@
             <img src="https://i.imgur.com/wrXgPUG.png" alt="logo-mobile">
         </figure>
         <div class="iconsContainer-Header">
-            <img src="https://i.imgur.com/FiXpJgz.png" alt="">
-            <img src="https://i.imgur.com/RzyAeW5.png" alt="">
-            <img src=".https://i.imgur.com/v9nCgMv.png" alt="">
+            <img src="https://i.imgur.com/FiXpJgz.png" alt="image">
+            <img src="https://i.imgur.com/RzyAeW5.png" alt="image">
+            <img src=".https://i.imgur.com/v9nCgMv.png" alt="image">
         </div>
         <div id="menuDerroulant">
             <nav id="container-menuDerroulant">
                 <ul>
-                    <li><a href="">Menu</a></li>
+                    <li class="linone">
+                        <a id="menuN" href="#">Menu</a>
+                        <img id="MenuB" src="https://cdn-icons-png.flaticon.com/512/6015/6015685.png" alt="image">
+                    </li>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./stat.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -37,6 +41,19 @@
             </nav>
         </div>
     </header>
+    <div id="decoration">
+        <div id="decoGauche">
+            <figure><img src="https://i.imgur.com/keErWFB.png" alt="image"></figure>
+            <figure><img src="https://i.imgur.com/4jQkgUC.png" alt="image"></figure>
+            <figure><img src="https://i.imgur.com/q9Z8qn8.png" alt="image"></figure>
+            <figure><img src="../../1x/Asset 4.png" alt="image"></figure>
+        </div>
+        <div id="decoDroit">
+            <figure><img src="https://i.imgur.com/MRllC8s.png" alt="image"></figure>
+            <figure><img src="https://i.imgur.com/CPiyNG1.png" alt="image"></figure>
+            <figure><img src="https://i.imgur.com/II2iCp0.png" alt="image"></figure>
+        </div>
+    </div>
     <main>
         <h1>Éco-Cript's News</h1>
         <p id="nbArticles">1100 Arcticles depuis 2018</p>
@@ -50,12 +67,13 @@
                 <input type="radio" id="Econ" name="filtre">
                 <label for="Econ">Économique</label>
                 <input type="radio" id="Day" name="filtre">
-                <label for="Day">Aujourd'hui</label>
+                <label for="Day" class="aurevoir">Aujourd'hui</label>
 
                 <div id="container-newsBlock">
+                    <a href="#">
                     <div class="all Econ Day">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2023/02/hacker-nord-coreen.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2023/02/hacker-nord-coreen.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">FUITE DE DONNÉE UTILISATEUR CHEZ COIN CLOUD</h4>
@@ -65,9 +83,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Ecol Day">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2021/12/Bitcoin-BTC-Minage-Mining-Nature-ecologie-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2021/12/Bitcoin-BTC-Minage-Mining-Nature-ecologie-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">LA FACE CACHÉE DU MINAGE DE BITCOINS</h4>
@@ -77,21 +97,25 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Econ Day">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/09/Bitcoin_BTC_Union_Europeene_1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/09/Bitcoin_BTC_Union_Europeene_1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
-                            <h4 class="Title-news">MICA : UN POINT SUR LES CONSULTATIONS DE L’ESMA</h4>
+                            <h4 class="Title-news" id="titreTrop">MICA : UN POINT SUR LES CONSULTATIONS DE L’ESMA</h4>
                             <p class="descriptions-news">Construire la règlementation de demain. L’autorité européenne des marchés financiers (AEMF ou l’ESMA en anglais) vient de publier une consultation de plus de 300 pages concernant les standards techniques à définir...</p>
                             <p class="date-news">
                             Janvier 12, 2025- Propriétaire de l'article
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Ecol Day">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2021/12/Bitcoin-BTC-Nature-ecologie-vert-1-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2021/12/Bitcoin-BTC-Nature-ecologie-vert-1-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">BITCOIN : L’ONU SE PENCHE SUR L’IMPACT ÉCOLOGIQUE</h4>
@@ -101,9 +125,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Ecol Day">
                         <figure class="container-img-news">
-                            <img src="https://th.bing.com/th/id/OIP.f4_3VdgkoscBjI1-jVmqHQHaE7?pid=ImgDet&w=3832&h=2554&rs=1" alt="">
+                            <img src="https://th.bing.com/th/id/OIP.f4_3VdgkoscBjI1-jVmqHQHaE7?pid=ImgDet&w=3832&h=2554&rs=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">
@@ -114,9 +140,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Ecol">
                         <figure class="container-img-news">
-                            <img src="https://media.lesechos.com/api/v1/images/view/605ad5e58fe56f13310fefb6/1024x576-webp/061694851981-web-tete.webp" alt="">
+                            <img src="https://media.lesechos.com/api/v1/images/view/605ad5e58fe56f13310fefb6/1024x576-webp/061694851981-web-tete.webp" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">Le bitcoin a un vilain petit secret, sa consommation d'énergie</h4>
@@ -126,9 +154,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Econ">
                         <figure class="container-img-news">
-                            <img src="https://climate.selectra.com/sites/climate.selectra.com/files/styles/article_hero/public/banners/fr-guide-ecological-impact-bitcoin-825x293.png.webp" alt="">
+                            <img src="https://climate.selectra.com/sites/climate.selectra.com/files/styles/article_hero/public/banners/fr-guide-ecological-impact-bitcoin-825x293.png.webp" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">Le minage : la source de pollution principale du Bitcoin</h4>
@@ -138,9 +168,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Ecol">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/07/Ruja_Ignatova_OneCoin_Wanted-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/07/Ruja_Ignatova_OneCoin_Wanted-1.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">PONZI ONECOIN : UNE AUTRE COMPLICE DE LA CRYPTO QUEEN</h4>
@@ -150,9 +182,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Econ">
                         <figure class="container-img-news">
-                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/10/nayib-bitcoin.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="">
+                            <img src="https://journalducoin-com.exactdn.com/app/uploads/2022/10/nayib-bitcoin.jpg?strip=all&lossy=1&quality=90&webp=90&resize=1160%2C653&ssl=1" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">SURVIE DE BITCOIN AU SALVADOR</h4>
@@ -162,9 +196,11 @@
                             </p>
                         </div>
                     </div>
+                    </a>
+                    <a href="#">
                     <div class="all Econ">
                         <figure class="container-img-news">
-                            <img src="https://fr.cryptonews.com/wp-content/uploads/sites/3/2023/11/AMF-France.jpg" alt="">
+                            <img src="https://fr.cryptonews.com/wp-content/uploads/sites/3/2023/11/AMF-France.jpg" alt="image">
                         </figure>
                         <div class="text-news">
                             <h4 class="Title-news">Presque 10% des Français détiennent des cryptos</h4>
@@ -174,22 +210,32 @@
                             </p>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
             <article id="Main-Pub">
                 <div id="Cache-Pub">
-                    <img id="img-trou" src="https://i.imgur.com/2N73ZYN.png" alt="">
-                    <img src="https://i.imgur.com/VQcprPV.png" alt="">
+                    <img id="img-trou" src="https://i.imgur.com/2N73ZYN.png" alt="image">
+                    <img src="https://i.imgur.com/VQcprPV.png" alt="image">
                 </div>
+                <a href="#">
                 <div class="pub">
-                    <spam>Publicite 1</spam>
+                    <img src="https://lyon.cesi.fr/wp-content/uploads/sites/10/2022/11/Nuit-de-lInfo-2022.jpg" alt="image">
+                    <span>Publicite 1</span>
                 </div>
+                </a>
+                <a href="#">
                 <div class="pub">
-                    <spam>Publicite 2</spam>
+                    <img src="https://lyon.cesi.fr/wp-content/uploads/sites/10/2022/11/Nuit-de-lInfo-2022.jpg" alt="image">
+                    <span>Publicite 2</span>
                 </div>
+                </a>
+                <a href="#">
                 <div class="pub">
-                    <spam>Publicite 3</spam>
+                    <img src="https://lyon.cesi.fr/wp-content/uploads/sites/10/2022/11/Nuit-de-lInfo-2022.jpg" alt="image">
+                    <span>Publicite 3</span>
                 </div>
+                </a>
             </article>
         </section>
     </main>
@@ -198,24 +244,24 @@
             <article>
                 <h5>Lorem ipsum</h5>
                 <div>
-                    <img src="https://i.imgur.com/V5FVipx.png" alt="">
-                    <img src="https://i.imgur.com/SyLEPGF.png" alt="">
-                    <img src="https://i.imgur.com/qg11xPb.png" alt="">
-                    <img src="https://i.imgur.com/tOHreXj.png" alt="">
+                    <img src="https://i.imgur.com/V5FVipx.png" alt="image">
+                    <img src="https://i.imgur.com/SyLEPGF.png" alt="image">
+                    <img src="https://i.imgur.com/qg11xPb.png" alt="image">
+                    <img src="https://i.imgur.com/tOHreXj.png" alt="image">
                 </div>
             </article>
             <article>
                 <h5>Nos réseaux sociaux</h5>
-                <img class="logo-gris" src="https://i.imgur.com/5REs1Y7.png" alt="">
+                <img class="logo-gris" src="https://i.imgur.com/5REs1Y7.png" alt="image">
             </article>
         </section>
         <div id="images-footer">
-            <img src="https://i.imgur.com/6AVo7w3.png" alt="">
-            <img src="https://i.imgur.com/I1pZ0Tj.png" alt="">
-            <img src="https://i.imgur.com/tAa2Tbr.png" alt="">
-            <img src="https://i.imgur.com/gqhiVs4.png" alt="">
-            <img src="https://i.imgur.com/bRGVTah.png" alt="">
-            <img src="https://i.imgur.com/8bTWoEC.png" alt="">
+            <img src="https://i.imgur.com/6AVo7w3.png" alt="image">
+            <img src="https://i.imgur.com/I1pZ0Tj.png" alt="image">
+            <img src="https://i.imgur.com/tAa2Tbr.png" alt="image">
+            <img src="https://i.imgur.com/gqhiVs4.png" alt="image">
+            <img src="https://i.imgur.com/bRGVTah.png" alt="image">
+            <img src="https://i.imgur.com/8bTWoEC.png" alt="image">
         </div>
         <section id="Links">
             <div class="links-footer">

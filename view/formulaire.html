@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoEco</title>
+    <link rel="stylesheet" href="../stylee/stylesH.css"> <!-- Header's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesF.css"> <!-- Footer's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesVar.css"> <!-- Variables's Styles -->
+    <link rel="stylesheet" href="../stylee/stylesFormulaire.css">
+    <!--Links to have Libre Franklin's Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;0,600;0,700;0,900;1,100;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure class="logoContainer">
+            <img src="https://i.imgur.com/93ceLna.png" alt="logo">
+            <img src="https://i.imgur.com/wrXgPUG.png" alt="logo-mobile">
+        </figure>
+        <div class="iconsContainer-Header">
+            <img src="https://i.imgur.com/FiXpJgz.png" alt="">
+            <img src="https://i.imgur.com/RzyAeW5.png" alt="">
+            <img src=".https://i.imgur.com/v9nCgMv.png" alt="">
+        </div>
+        <div id="menuDerroulant">
+            <nav id="container-menuDerroulant">
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="stat.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="decoration">
+        <div id="decoGauche">
+            <figure><img src="https://i.imgur.com/keErWFB.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/4jQkgUC.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/q9Z8qn8.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/nnGdtZX.png" alt=""></figure>
+        </div>
+        <div id="decoDroit">
+            <figure><img src="https://i.imgur.com/MRllC8s.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/CPiyNG1.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/II2iCp0.png" alt=""></figure>
+            <figure><img src="https://i.imgur.com/otPUBRT.png" alt=""></figure>
+        </div>
+
+    <div class="formu">
+        <form action="/traitement-formulaire" method="get">
+        <h2>Formulaire d'inscription</h2><br>
+            <fieldset>
+                <div class="Nom">
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom" class="input" placeholder="Votre Nom" name="nom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ-' ]+" title="Veuillez saisir un nom valide (lettres, tirets et espaces seulement)" required>
+                </div>
+
+                <div class="Prénom">
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" id="prenom" class="input" placeholder="Votre Prénom" name="prenom" pattern="[A-Za-zÀ-ÖØ-öø-ÿ-' ]+" title="Veuillez saisir un nom valide (lettres, tirets et espaces seulement)" required>
+                </div>
+
+                <div class="Mail">
+                    <label for="mail">Mail*</label>
+                    <input type="email" id="mail" class="input" name="mail" placeholder="adresseMail@gmail.com" required>
+                </div>
+            
+
+            <div class="Sexe">
+                <label>Sexe:</label>
+                <input type="radio" id="Homme" name="input" class="bouton" value="HOMME" >
+                <label for="Homme">Homme</label>
+                <input type="radio" id="Femme" name="input" class="bouton" value="FEMME">
+                <label for="Femme">Femme</label>
+            </div>
+
+            <div class="Date_de_naissance_Age">
+                <label for="anniversaire">Date de naissance:</label>
+                <input type="date" id="anniversaire" class="inputAnniversaire" name="anniversaire" min="2005-01-01">
+                <label for="age">Âge:</label>
+                <input type="number" id="age" class="inputAge" name="age" placeholder="âge" min="18">
+                <label for="age">ans</label>
+            </div>
+
+            <div class="CodePostal">
+                <label for="codPostal">Code Postal*:</label>
+                <input type="number" id="codPostal" class="inputCod" placeholder="ex: 34200" name="codPostal" required>
+            </div>
+
+            <div class="Pays">
+                <label for="Pays_d_origine">Pays d'origine*:</label>
+                <select class="pays2" name="continents" id="Pays_d_origine" required>
+                    <option class="pays" value="" >--Choisir un pays--</option>
+                    <option class="pays" value="Fr">France</option>
+                    <option class="pays" value="BG">Belgique</option>
+                    <option class="pays" value="SS">Suisse</option>
+                    <option class="pays" value="ES">Espagne</option>
+                    <option class="pays" value="Al">Allemagne</option>
+                    <option class="pays" value="AN">Angleterre</option>
+                    <option class="pays" value="NI">Nicaragua</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <h2>Votre avis nous intéresse</h2>
+
+            <div class="Avis">
+                <label for="message">Pourquoi vous inscrivez-vous à notre site web?</label>
+                <textarea id="message" class="inputAvis" name="message" placeholder="Exprimez-vous" ></textarea>
+            </div>
+
+            <div class="question">
+                <label for="question">Vous avez entendu parlé de nous via*: </label>
+                <select class="pays2" name="question" id="question" required>
+                    <option class="pays" value="" >--Choisir un mode--</option>
+                    <option class="pays" value="RS">Réseau sociaux</option>
+                    <option class="pays" value="IN">Internet</option>
+                    <option class="pays" value="JO">Journal</option>
+                    <option class="pays" value="AU">Autre</option>
+                </select>
+            </div>
+
+            <div class="Date_Contacte">
+                <label for="DateRecontact">Date à laquelle vous souhaitez être recontacté*:</label>
+                <input type="date" id="DateRecontact" class="inputContact" name="DateRecontact" min="2023-11-22" required>
+            </div>
+
+            <div class="bouton">
+                <input type="checkbox" id="lire" name="lire" value="bouton" required>
+                <label for="lire">J'ai bien lu les clauses d'inscription</label>
+            </div>
+        </fieldset>
+
+            
+            <input type="submit" class="fin" name="Valider">
+            
+        
+        </form>
+    </div>
+    <footer>
+        <section id="sociaux">
+            <h2>Social Media Links</h2>
+            <article>
+                <h5>Lorem ipsum</h5>
+                <div>
+                    <img src="https://i.imgur.com/V5FVipx.png" alt="">
+                    <img src="https://i.imgur.com/SyLEPGF.png" alt="">
+                    <img src="https://i.imgur.com/qg11xPb.png" alt="">
+                    <img src="https://i.imgur.com/tOHreXj.png" alt="">
+                </div>
+            </article>
+            <article>
+                <h5>Lorem ipsum Lorem</h5>
+                <img class="logo-gris" src="https://i.imgur.com/5REs1Y7.png" alt="">
+            </article>
+        </section>
+        <div id="images-footer">
+            <img src="https://i.imgur.com/6AVo7w3.png" alt="">
+            <img src="https://i.imgur.com/I1pZ0Tj.png" alt="">
+            <img src="https://i.imgur.com/tAa2Tbr.png" alt="">
+            <img src="https://i.imgur.com/gqhiVs4.png" alt="">
+            <img src="https://i.imgur.com/bRGVTah.png" alt="">
+            <img src="https://i.imgur.com/8bTWoEC.png" alt="">
+        </div>
+        <section id="Links">
+            <h2>Links</h2>
+            <div class="links-footer">
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+            </div>
+            <div class="links-footer">
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+            </div>
+            <div class="links-footer">
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+                <p><a href="">Lorem ipsum</a></p>
+            </div>
+        </section>
+        <section id="text-footer">
+            <h2>Text footer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui ducimus, accusamus hic, similique ipsam earum adipisci, obcaecati iure quos doloribus laboriosam beatae necessitatibus voluptatem? Libero explicabo facilis nemo corrupti.</p>
+            <p>©2023 Lorem ipsum dolor sit amet consectetur INC.</p>
+        </section>
+    </footer>
+</body>
+</html>
+

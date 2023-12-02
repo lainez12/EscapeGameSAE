@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 auto;
+    max-width: var(--Ordi);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.debut {
+    color: var(--aqua-green-800);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: var(--Police-weight-HyperBold);
+    font-size: var(--Police-Taille-TitlePage);
+}
+
+.tropGrandetirer {
+    margin-top: 15px;
+    width: 50%;
+    max-width: 300px;
+    transform: scaleX(1.5);
+    border-radius: 30px;
+}
+
+.tropGrand {
+    display: flex;
+    margin-right: 10px;
+    width: 50px;
+    height: auto;
+    padding: 0;
+    
+}
+
+.Important {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: var(--Police-weight-Bold);
+    font-size: var(--Police-Taille-SubTitle);
+    display: flex;
+    color: var(--aqua-green-700);
+    justify-content: center;
+}
+
+.orange{
+    display: flex;
+    background-color: var(--fire-bush-500);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius :15px;
+    align-items: center;
+}
+
+.vert{
+    display: flex;
+    background-color: var(--aqua-green-600);
+    padding: 10px;
+    border-radius :15px;
+    align-items: center;
+}
+
+.moyen{
+    flex: 1;
+    font-size: var(--Police-Taille-Regular);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.moyen2{
+    flex: 1;
+    font-size: var(--Police-Taille-Regular);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moyen2 > p{
+    color: var(--fire-bush-500);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.moyengrand{
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .moyen2 {
+        flex-direction: column;
+    }
+    .debut {
+        font-size: var(--Police-Taille-Regular);
+    }
+
+    .moyengrand {
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+body .moyen .orange:hover img,
+.moyen .vert:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(127deg) brightness(102%) contrast(101%);
+}
+
+.moyen .orange img:nth-child(1) {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(90%) saturate(7459%) hue-rotate(60deg) brightness(88%) contrast(112%);
+}
