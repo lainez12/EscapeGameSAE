@@ -30,6 +30,12 @@
 
 @media screen and (max-width:700px) {
 
+main div.iconsContainer-Header img:nth-child(3) {
+    left: 166px;
+    top: 86px;
+    width: 33px;
+}
+
     #Main-News label{
         border: 1px var(--aqua-green-800) solid;
         padding: 3px;
